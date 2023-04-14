@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+  <meta charset="UTF-8">
+
+  <title>Page e3</title>
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  type="text/javascript">
+</script>
+</head>
+
+<body>
+  <h2>
+  sId:<input type="text" id="sid" value="201"><br>
+  Name:<input type="text" id="sname" value="Kevin"><br>
+  <br>
+  <div id="display2">
+  <input name="user_active_col[]" type="checkbox" id="CkType01" value="type01"> Coupon 01
+  <input name="user_active_col[]" type="checkbox" id="CkType02" value="type02"> Coupon 02
+  <input name="user_active_col[]" type="checkbox" id="CkType03" value="type03"> Coupon 03
+  <input name="user_active_col[]" type="checkbox" id="CkType04" value="type04"> Coupon 04
+  </div>
+  <br><br><br>
+  <input name="clickAll" id="clickAll" type="checkbox"> 全選(測試用)<br>
+  <input type="button" id="querymemid" value="Query Coupon By Memid "><br>
+  <input type="button" id="querysid" value="Query Member By Sid "><br>
+  <br><br>
+  
+   <input type="button" id="query" value="Get All Coupon"> 
+  <!-- <input type="button" id="querymemid" value="Query Coupon By Memid "> -->
+   <input type="button" id="modify" value="update coupon">
+  <input type="button" id="add" value="Add coupon"> <input type=
+  "button" id="remove" value="Remove coupon">
+  <br><br>
+  
+  
+  
+  
+  memid:<input type="text" id="memid" value="201"><br>
+  Coupon 01:<input type="text" id="type01" value="01"><br>
+  Coupon 02:<input type="text" id="type02" value="02"><br>
+  Coupon 03:<input type="text" id="type03" value="03"><br>
+  Coupon 04:<input type="text" id="type04" value="04"><br>
+  sum:<input type="text" id="sum" value="20"><br>
+</h2>
+
+  <div id="display"></div><script type="text/javascript">
+
+  $("#clickAll").click(function() {
+	   if($("#clickAll").prop("checked")) {
+	     $("input[name='user_active_col[]']").each(function() {
+	         $(this).prop("checked", true);
+	     });
+	   } else {
+	     $("input[name='user_active_col[]']").each(function() {
+	         $(this).prop("checked", false);
+	     });
+	   }
+	});
+  
+    function result(data){
+       $("#display").html(data);
+    }
+    function result2(data){
+        $("#display2").html(data);
+     }
+    function remove(){
+          var id=$("#memid").val();
+        
+        $.post("DeleteCouponServlet",{"memid":id},result)
+  }
+    function QueryMemid(){
+            var id=$("#sid").val();
+        $.get("QueryCouByMemidServlet",{"memid":id},result2)
+    }
+    function QuerySid(){
+        var id=$("#sid").val();
+    $.get("QueryMemBySidServlet",{"sid":id},result2)
+}
+    function addCoupon(){
+          var id=$("#memid").val();
+          var type01=$("#type01").val();
+          var type02=$("#type02").val();
+          var type03=$("#type03").val();
+          var type04=$("#type04").val();
+          var sum=$("#sum").val();
+          $.post("AddCouponServlet",{"memid":id , "type01":type01 , "type02":type02 , "type03":type03 , "type04":type04 , "sum":sum},result)
+    }
+    function updateCoupon(){
+          var id=$("#memid").val();
+          var type01=$("#type01").val();
+          var type02=$("#type02").val();
+          var type03=$("#type03").val();
+          var type04=$("#type04").val();
+          var sum=$("#sum").val();
+          $.post("UpdateCouponServlet",{"memid":id , "type01":type01 , "type02":type02 , "type03":type03 , "type04":type04 , "sum":sum},result)
+    }
+    function getAll(){
+       $.get("QueryCouponServlet",result); 
+    }
+    function start(){
+       $("#query").click(getAll);
+       $("#modify").click(updateCoupon);
+       $("#add").click(addCoupon);
+       $("#querymemid").click(QueryMemid);
+       $("#querysid").click(QuerySid);
+       $("#remove").click(remove);
+    }
+    $(document).ready(start);
+  </script>
+</body>
+</html>

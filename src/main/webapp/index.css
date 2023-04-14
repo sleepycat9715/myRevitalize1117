@@ -1,0 +1,335 @@
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-poppins: Poppins;
+  --h61: Montserrat;
+
+  /* font sizes */
+  --font-size-3xs: 13px;
+  --h61-size: 14px;
+  --h5-size: 16px;
+  --font-size-sm: 20px;
+  --h4-size: 24px;
+  --font-size-lg: 36px;
+
+  /* Colors */
+  --light-text-color: #fff;
+  --color-gray-100: #e4e4e4;
+  --second-text-color: #737373;
+  --color-gray-300: #262f30;
+  --text-color: #23252d;
+  --color-gray-500: #121111;
+  --color-gray-600: rgba(90, 76, 76, 0.9);
+  --color-gray-700: rgba(0, 0, 0, 0.4);
+  --color-gray-800: rgba(0, 0, 0, 0.8);
+  --color-indigo-100: #0e64d2;
+  --primary-color: #23a6f0;
+
+  /* Gaps */
+  --gap-sm: 5px;
+  --gap-md: 10px;
+
+  /* Paddings */
+  --padding-sm: 10px;
+  --padding-md: 20px;
+
+  /* border radiuses */
+  --br-sm: 5px;
+  --br-md: 10px;
+
+  /* Effects */
+  --accentued-drop-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+body {
+  margin: 0;
+  line-height: normal
+}
+
+.design-space-paper-textured-ba-icon,
+.gradient-icon {
+  position: absolute;
+  top: 1365px;
+  left: 1380px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%
+}
+
+.gradient-icon {
+  height: calc(100% - 1707px);
+  width: calc(100% - 2656px);
+  right: 1276px;
+  bottom: 342px;
+  opacity: .9
+}
+
+.design-space-paper-textured-ba-icon {
+  height: 100%;
+  width: 100%;
+  right: -1380px;
+  bottom: -1365px;
+  object-fit: cover;
+  opacity: .6
+}
+
+.fitz-sitting-floor-stretching,
+.fitz-sports-app {
+  position: absolute;
+  height: calc(100% - 2359px);
+  width: calc(100% - 3590px);
+  top: 1951px;
+  right: 2064px;
+  bottom: 408px;
+  left: 1526px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.fitz-sports-app {
+  height: calc(100% - 2314px);
+  width: calc(100% - 3530px);
+  top: 1862px;
+  right: 1276px;
+  bottom: 452px;
+  left: 2254px
+}
+
+.div1 {
+  height: calc(100% + 1707px);
+  width: calc(100% + 2656px);
+  top: -1365px;
+  right: -1276px;
+  bottom: -342px;
+  left: -1380px
+}
+
+.button,
+.div1,
+.icon {
+  position: absolute
+}
+
+.icon {
+  top: calc(50% - 512px);
+  left: calc(50% - 640px);
+  width: 1279.87px;
+  height: 972.41px;
+  object-fit: cover
+}
+
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% - 13.5px);
+  left: calc(50% + 38.5px);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-500);
+  text-align: left;
+  display: inline-block;
+  width: 82px;
+  height: 22px;
+  text-shadow: 0 8px 10px rgba(0, 0, 0, .1), 0 20px 25px rgba(0, 0, 0, .1)
+}
+
+.a,
+.div2 {
+  position: absolute;
+  height: 27px
+}
+
+.a {
+  top: calc(50% - 13.5px);
+  left: calc(50% - 120.5px);
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  width: 155px;
+  text-decoration: none
+}
+
+.div2 {
+  top: calc(50% + 188px);
+  left: calc(50% - 130px);
+  width: 241px;
+  text-align: left
+}
+
+.re-butten-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% + 107px);
+  left: calc(50% - 139px);
+  border-radius: 20px;
+  width: 290.11px;
+  height: 63.18px;
+  background-image: url(./public/butten@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top
+}
+
+.eye-password-logo {
+  position: absolute;
+  top: calc(50% + 55px);
+  left: calc(50% + 111px);
+  width: 24px;
+  height: 24px;
+  object-fit: cover
+}
+
+.password-input {
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--light-text-color);
+  position: absolute;
+  top: calc(50% + 42.5px);
+  left: calc(50% - 81.5px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 224px;
+  height: 49px
+}
+
+.b {
+  top: calc(50% + 53px);
+  left: calc(50% - 156px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 63px;
+  height: 23px
+}
+
+.b,
+.b1,
+.cell-input {
+  position: absolute
+}
+
+.cell-input {
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--light-text-color);
+  top: calc(50% - 26.5px);
+  left: calc(50% - 81.5px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 224px;
+  height: 49px
+}
+
+.b1 {
+  top: calc(50% - 16px);
+  left: calc(50% - 156px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 63px;
+  height: 23px
+}
+
+.email-input {
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--light-text-color);
+  position: absolute;
+  top: calc(50% - 95.5px);
+  left: calc(50% - 81.5px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 224px;
+  height: 49px
+}
+
+.b2 {
+  position: absolute;
+  top: calc(50% - 84px);
+  left: calc(50% - 156px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 63px;
+  height: 23px
+}
+
+.sname-input {
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--light-text-color);
+  top: calc(50% - 161.5px);
+  left: calc(50% - 81.5px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 224px;
+  height: 49px
+}
+
+.b3,
+.sid-input,
+.sname-input {
+  position: absolute
+}
+
+.b3 {
+  top: calc(50% - 151px);
+  left: calc(50% - 156px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 63px;
+  height: 23px
+}
+
+.sid-input {
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--light-text-color);
+  top: calc(50% - 229.5px);
+  left: calc(50% - 81.5px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 224px;
+  height: 49px
+}
+
+.b4,
+.h1 {
+  position: absolute;
+  top: calc(50% - 218px);
+  left: calc(50% - 156px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 63px;
+  height: 23px
+}
+
+.h1 {
+  margin: 0;
+  top: calc(50% - 297px);
+  left: calc(50% - 89px);
+  font-size: var(--font-size-lg);
+  letter-spacing: .15em;
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: #353030;
+  text-align: center;
+  width: 184px;
+  height: 47px
+}
+
+.div {
+  position: relative;
+  background-color: var(--light-text-color);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: right;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  font-family: var(--font-poppins)
+}

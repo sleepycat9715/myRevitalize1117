@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2901.41px;
+  height: 2845.28px;
+  object-fit: cover;
+}
+.box-button,
+.box-button1,
+.box-button2,
+.spring-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% + 133.79px);
+  left: calc(50% + 43.67px);
+  width: 497.73px;
+  height: 252.21px;
+  background-image: url(./public/box@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.box-button1,
+.box-button2,
+.spring-button {
+  top: calc(50% - 247.39px);
+  background-image: url(./public/box1@3x.png);
+}
+.box-button2,
+.spring-button {
+  top: calc(50% + 133.79px);
+  left: calc(50% - 541px);
+  background-image: url(./public/box2@3x.png);
+}
+.spring-button {
+  top: calc(50% - 247.39px);
+  background-image: url(./public/spring@3x.png);
+}
+.p {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.p1 {
+  margin: 0;
+  color: var(--color-gray-600);
+}
+.div1 {
+  top: calc(50% - 31.5px);
+  left: calc(50% - 208px);
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+  width: 416px;
+}
+.a,
+.a1,
+.div1,
+.div2 {
+  position: absolute;
+  height: 63px;
+}
+.a {
+  top: calc(50% + 57px);
+  left: calc(50% + 76px);
+  width: 416px;
+  color: inherit;
+}
+.a1,
+.div2 {
+  width: 436px;
+}
+.div2 {
+  top: calc(50% - 31.5px);
+  left: calc(50% - 218px);
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+}
+.a1 {
+  top: calc(50% - 320px);
+  left: calc(50% + 90px);
+  color: inherit;
+}
+.a2,
+.a3,
+.div3 {
+  position: absolute;
+  width: 397.42px;
+  height: 63.05px;
+}
+.div3 {
+  top: calc(50% - 31.53px);
+  left: calc(50% - 198.71px);
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+}
+.a2,
+.a3 {
+  top: calc(50% + 57.36px);
+  left: calc(50% - 508.52px);
+  color: inherit;
+}
+.a3 {
+  top: calc(50% - 320px);
+}
+.qr-code-p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.a3-title2-txt-span {
+  line-break: anywhere;
+  width: 100%;
+}
+.a3-title2-legend {
+  padding: 0;
+  position: absolute;
+  top: 68px;
+  left: calc(50% - 426px);
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  display: flex;
+  align-items: center;
+  width: 884px;
+  height: 56px;
+}
+.div {
+  position: relative;
+  background-color: var(--light-text-color);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--h4-size);
+  color: var(--red-500);
+  font-family: var(--h4);
+}

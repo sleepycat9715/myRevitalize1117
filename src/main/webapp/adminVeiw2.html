@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  
+  <meta charset="utf-8">
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+  
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./adminVeiw.css" />
+ 
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+</head>
+<body>
+<div class="div">
+      <img class="background-icon" alt="" src="public/background@20x.png" />
+      <div class="ptable-div">
+
+<div class="container">
+  <h2>管理員熊好券查詢畫面</h2>
+  <input type="button" id="query" value="查詢總表">      
+  <table class="table table-hover">
+    <tbody>
+      
+           <tr> 
+     <div id="display">
+     </div>
+     </tr>
+     
+     <tr>
+     <div id="display2">
+     </div>
+     </tr>
+     
+    <script type="text/javascript">
+     
+    function result(data){
+       $("#display").html(data);
+           }
+
+    function result2(data){
+        $("#display2").html(data);
+            }
+          
+    function getAll(){
+       $.get("QueryMemberServlet04",result);
+       $.get("QueryCouponServlet04",result2);
+        
+    }
+      
+    function start(){
+       $("#query").click(getAll);
+       
+    }
+    $(document).ready(start);
+    
+    
+  </script>
+  
+  </div>
+	</div>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

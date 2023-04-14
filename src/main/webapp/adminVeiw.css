@@ -1,0 +1,105 @@
+:root {
+  /* fonts */
+  --h4: Montserrat;
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-3xs: 13px;
+  --h61-size: 14px;
+  --h5-size: 16px;
+  --font-size-sm: 20px;
+  --h4-size: 24px;
+  --font-size-lg: 20px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 64px;
+
+  /* Colors */
+  --color-gray-100: #fff9f9;
+  --color-gray-200: #e6e6e6;
+  --color-gray-300: #e4e4e4;
+  --color-gray-400: #dedede;
+  --second-text-color: #737373;
+  --color-gray-600: #64748a;
+  --color-gray-700: #556d6f;
+  --color-gray-800: #834b4b;
+  --text-color: #252b42;
+  --color-gray-1000: #121111;
+  --color-gray-1100: rgba(0, 0, 0, 0.4);
+  --color-gray-1200: rgba(0, 0, 0, 0.8);
+  --light-text-color: #fff;
+  --primary-color: #23a6f0;
+  --red-500: #ee4444;
+  --danger-color: #e74040;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-xs: 5px;
+  --gap-sm: 10px;
+  --gap-md: 15px;
+  --gap-lg: 25px;
+
+  /* Paddings */
+  --padding-xs: 5px;
+  --padding-sm: 10px;
+  --padding-md: 20px;
+  --padding-lg: 25px;
+
+  /* border radiuses */
+  --br-xs: 3px;
+  --br-sm: 5px;
+  --br-md: 10px;
+  --br-lg: 20px;
+  --br-xl: 44.79px;
+
+  /* Effects */
+  --accentued-drop-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  --light-dropshadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+.background-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 2038px;
+  object-fit: cover;
+}
+.ptable-div,
+.title-h1 {
+  position: absolute;
+  top: calc(50% - 835px);
+  left: calc(50% - 652px);
+  width: 1304px;
+  height: 1953px;
+}
+.title-h1 {
+  margin: 0;
+  top: calc(50% - 921px);
+  left: calc(50% - 138px);
+  font-size: inherit;
+  letter-spacing: 4px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 284px;
+  height: 56px;
+}
+.div {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 2038px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: #1d1d1d;
+  font-family: var(--h4);
+}

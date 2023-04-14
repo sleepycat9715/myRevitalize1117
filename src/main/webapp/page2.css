@@ -1,0 +1,239 @@
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+  --h61: Montserrat;
+
+  /* font sizes */
+  --font-size-3xs: 13px;
+  --h61-size: 14px;
+  --h5-size: 16px;
+  --font-size-sm: 20px;
+  --h4-size: 24px;
+  --font-size-lg: 36px;
+
+  /* Colors */
+  --light-text-color: #fff;
+  --color-gray-100: #e4e4e4;
+  --second-text-color: #737373;
+  --color-gray-300: #556d6f;
+  --text-color: #252b42;
+  --color-gray-500: #121111;
+  --color-gray-600: rgba(255, 255, 255, 0.9);
+  --color-gray-700: rgba(0, 0, 0, 0.4);
+  --color-gray-800: rgba(0, 0, 0, 0.8);
+  --color-indigo-100: #0e64d2;
+  --primary-color: #23a6f0;
+
+  /* Gaps */
+  --gap-sm: 5px;
+  --gap-md: 10px;
+
+  /* Paddings */
+  --padding-sm: 10px;
+  --padding-md: 20px;
+
+  /* border radiuses */
+  --br-sm: 5px;
+  --br-md: 10px;
+
+  /* Effects */
+  --accentued-drop-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+body {
+  margin: 0;
+  line-height: normal
+}
+.icon,
+.icon1 {
+  position: absolute;
+  object-fit: cover
+}
+.icon {
+  height: 101.17%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: -1.17%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%
+}
+.icon1 {
+  top: calc(50% - 437px);
+  left: calc(50% - 470px);
+  width: 939.99px;
+  height: 949px
+}
+.span {
+  letter-spacing: .2em
+}
+.p {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 13.5px);
+  left: calc(50% - 132px);
+  font-weight: 600;
+  display: inline-block;
+  width: 166px;
+  height: 31px
+}
+.button,
+.div2 {
+  position: absolute;
+  text-align: left
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% - 17.5px);
+  left: calc(50% + 28px);
+  font-size: var(--h4-size);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-500);
+  display: inline-block;
+  width: 104px;
+  height: 22px;
+  text-shadow: 0 8px 10px rgba(0,0,0,.1),0 20px 25px rgba(0,0,0,.1)
+}
+.div2 {
+  top: calc(50% + 133px);
+  left: calc(50% - 130.5px);
+  box-shadow: 0 0 0 4px rgba(255,255,255,.01);
+  width: 264px;
+  height: 35px
+}
+.h1 {
+  margin: 0;
+  top: calc(50% - 168px);
+  left: calc(50% - 120.5px);
+  font-size: 40px;
+  letter-spacing: .15em;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  width: 241px;
+  height: 43px
+}
+.div3,
+.div4,
+.h1 {
+  position: absolute
+}
+.div3 {
+  top: calc(50% - 24px);
+  left: calc(50% - 156px);
+  border-radius: var(--br-sm);
+  background-color: var(--color-indigo-100);
+  width: 312px;
+  height: 48px
+}
+.div4 {
+  top: calc(50% - 15px);
+  left: calc(50% - 20px);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-600);
+  text-align: left;
+  display: inline-block
+}
+.button1,
+.password-input {
+  position: absolute;
+  height: 48px
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% + 66px);
+  left: calc(50% - 155.5px);
+  width: 312px
+}
+.password-input {
+  border: 1px solid var(--color-gray-700);
+  background-color: var(--light-text-color);
+  top: calc(50% - 14px);
+  left: calc(50% - 77.5px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 225px
+}
+.b {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 155.5px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  color: rgba(1,1,1,.8);
+  display: inline-block;
+  width: 63px;
+  height: 21px
+}
+.sid-input {
+  border: 1px solid var(--color-gray-700);
+  background-color: var(--light-text-color);
+  top: calc(50% - 90.5px);
+  left: calc(50% - 78px);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 226px;
+  height: 49px
+}
+.b1,
+.div1,
+.sid-input {
+  position: absolute
+}
+.b1 {
+  top: calc(50% - 80px);
+  left: calc(50% - 156.5px);
+  letter-spacing: .04em;
+  font-weight: 500;
+  display: inline-block;
+  width: 63px;
+  height: 23px
+}
+.div1 {
+  top: calc(50% - 162px);
+  left: calc(50% - 157px);
+  box-shadow: 0 0 0 4px rgba(255,255,255,.01);
+  width: 313px;
+  height: 336px
+}
+.div {
+  position: relative;
+  background-color: var(--light-text-color);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: right;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-800);
+  font-family: var(--font-poppins)
+}
+.login-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% + 20px);
+  left: calc(50% - 156px);
+  border-radius: var(--br-lg);
+  width: 312px;
+  height: 48px;
+  background-image: url(./public/login@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top
+}

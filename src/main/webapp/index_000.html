@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1, width=device-width" />
+<title></title>
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="./index.css" />
+
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+</head>
+<body>
+	<div class="div">
+		<div class="div1">
+			<img class="gradient-icon" alt="" src="public/gradient.svg" /><img
+				class="design-space-paper-textured-ba-icon" alt=""
+				src="public/designspacepapertexturedbackground-1@2x.png" /><img
+				class="fitz-sitting-floor-stretching" alt=""
+				src="public/fitz-sitting-floor-stretching@2x.png" /><img
+				class="fitz-sports-app" alt="" src="public/fitz-sports-app@2x.png" />
+		</div>
+		<img class="icon" alt=""
+			src="public/friendly-ones-friendly-blocks@2x.png" />
+		
+		<h1 class="h1">會員註冊</h1>		
+			
+		<b class="b4">身份證</b>
+		<input type="text" class="sid-input" id="sid"></input>		
+		
+		<b class="b3">姓名</b>
+		<input type="text" class="sname-input"  id="sname"></input>
+		
+		<b 	class="b2">信箱</b>		
+		<input type="text" class="email-input" id="email"></input>
+		
+		<b class="b1">電話</b>		
+		<input type="text" class="cell-input" id="cell"></input>
+		
+		<img class="eye-password-logo" alt=""src="public/eye-password-logo@2x.png" />
+		<b class="b">密碼</b>		
+		<input type="text" class="password-input" id="password"></input>
+						
+		<button class="re-butten-button" id="add"></button>
+				
+		<div class="div2">	
+			<button class="button" onclick=window.location.href="page2.html">點擊登入</button>
+			<a class="a">你已有帳號了嗎?</a>
+		</div>		
+	</div>
+</body>
+	<script>   
+	function result(data){		          
+       if(data!="")
+       {
+        	alert("註冊成功");
+        	window.location.href="page2.html";
+       }
+       else
+	   {
+		   alert('格式不相符，請重新輸入');
+		}
+    }
+    function addMember(){		
+        var id=$("#sid").val();
+        var name=$("#sname").val();
+        var pw=$("#password").val();
+        var email=$("#email").val();
+        var cell=$("#cell").val();        
+        if((id==""){
+    		alert("請填寫身分證字號");
+        }      
+        else if((id!="")&&(name!="")&&(pw!="")&&(cell!="")&&(email!="")){
+        	//alert("註冊成功");
+        	//window.location.href="page2.html";
+            $.post("RegisterMemberServlet",{"sid":id , "sname":name , "password":pw , "email":email , "cell":cell})
+        }
+        else{
+        	alert("請勿空白");
+        }
+    }
+    function addCoupon(){    
+    	var id=$("#sid").val();
+        var type01=0;
+        var type02=0;
+        var type03=0;
+        var type04=0;
+        var sum=0;               	
+        $.post("RegisterCouponServlet",{"memid":id , "type01":type01 , "type02":type02 , "type03":type03 , "type04":type04 , "sum":sum},result)                   
+    }
+    function start(){
+        $("#add").click(addMember);    
+        $("#add").click(addCoupon);   
+     }
+    $(document).ready(start); 
+</script>
+
+</html>
